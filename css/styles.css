@@ -5,13 +5,18 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
+p {
+     font-size: 15px;
+     word-wrap: break-word;
+}
+
 .container{
     display: flex;
-    margin: 450px;
+
 }
 
 .outer-layer{
-    margin: 350px;
+    margin: 250px;
 }
 
 
@@ -25,4 +30,37 @@ body {
     border-radius: 25px;
     overflow: hidden;
     padding: 20px;
+    width: 300px;
+}
+
+.star img {
+    background-color: hsl(216, 12%, 54%,.2);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.value{
+    background-color: hsl(216, 12%, 54%,.2);
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+
+.submit{
+    justify-content: center;
+
+}
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: 0px;
+    border-radius: 25px;
+    padding: 15px 120px 15px 120px;
+    margin-top: 20px;
+
 }
