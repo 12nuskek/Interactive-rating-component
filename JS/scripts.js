@@ -1,5 +1,7 @@
+let selected = 'not'
 
-if (selected == null){
+
+if (selected == 'not'){
     //don't let submmit work
     console.log('selected not set');
 }
@@ -7,15 +9,53 @@ if (selected == null){
 
 var one = document.getElementById('1');
 one.onclick = function() {
-    var selected = '1'
+    selected = '1'
     console.log(selected);
+    one.classList.add("selected");
+
 }
 
 var two = document.getElementById('2');
 two.onclick = function() {
-    var selected = '2'
+    selected = '2'
     console.log(selected);
 }
+
+var three = document.getElementById('3');
+three.onclick = function() {
+    selected = '3'
+    console.log(selected);
+}
+
+
+var four = document.getElementById('4');
+four.onclick = function() {
+    selected = '4'
+    console.log(selected);
+}
+
+
+var five = document.getElementById('5');
+five.onclick = function() {
+    selected = '5'
+    console.log(selected);
+}
+
+
+
+
+    var submit = document.getElementById('submit');
+    submit.onclick = function() {
+        if (selected != 'not'){
+            //don't let submmit work
+            console.log('item selected proceed');
+        }else{
+            console.log('No item selected');
+        }
+
+    }
+
+
 
 
 
