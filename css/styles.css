@@ -92,3 +92,7 @@ p {
 }
 
 
+.hidden{
+    display: none;
+}
+
