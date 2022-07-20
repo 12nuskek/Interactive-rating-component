@@ -96,3 +96,24 @@ p {
     display: none;
 }
 
+.mobile{
+    justify-content: center;
+}
+
+.text{
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+}
+
+.text p{
+    background-color: hsl(217, 12%, 63%,0.5);
+    border-radius: 25px;
+    padding: 15px 20px 15px 20px;
+    color: hsl(25, 97%, 53%);
+}
+
