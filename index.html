@@ -15,31 +15,31 @@
 
     <div class="container column-centre outer-layer">
             <div class="card">
-                <div class="star hidden">
+                <div id="star" class="star ">
                     <img src="/img/icon-star.svg" />
 
                 </div>
-                <div class="text hidden">
+                <div id="text" class="text ">
                     <h1>How did we do?</h1>
                     <p> Please let us know how we did with your support request. All feedback is appreciated 
                         to help us improve our offering!</p>
                 </div>
-                <div class="rating container hidden">
+                <div id="rating" class="rating container ">
                     <button id="1" class="value container">1</button>
                     <button id="2" class="value container">2</button>
                     <button id="3" class="value container">3</button>
                     <button id="4" class="value container">4</button>
                     <button id="5" class="value container">5</button>
                 </div>
-                <div id="submit" class="submit container hidden">
+                <div id="submit" class="submit container ">
                     <button>Submit</button>
                 </div>
-                <div class="thankyou">
+                <div id="thankyou" class="thankyou hidden">
                     <div class="mobile container">
                         <img src="/img/illustration-thank-you.svg" /> 
                     </div>
                     <div class="text container">
-                        <p>You selected 4 out of 5</p>
+                        <p>You selected <span id="selected"></span> out of 5</p>
                         <h1>Thank You!</h1>
                         <div class="description container">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</div>
                     </div>

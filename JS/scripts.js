@@ -1,5 +1,10 @@
 let selected = 'not'
 
+var thankyou = document.getElementById('thankyou');
+var star = document.getElementById('star');
+var text = document.getElementById('text');
+var rating = document.getElementById('rating');
+var submit = document.getElementById('submit');
 
 if (selected == 'not'){
     //don't let submmit work
@@ -9,11 +14,10 @@ if (selected == 'not'){
 
 var one = document.getElementById('1');
 one.onclick = function() {
-    selected = '1'
+   var selected = '1'
+   document.getElementById("selected").innerHTML = selected;
     console.log(selected);
     one.classList.add("selected");
-
-
     two.classList.remove("selected");
     three.classList.remove("selected");
     four.classList.remove("selected");
@@ -25,6 +29,7 @@ one.onclick = function() {
 var two = document.getElementById('2');
 two.onclick = function() {
     selected = '2'
+    document.getElementById("selected").innerHTML = selected;
     console.log(selected);
     two.classList.add("selected");
     one.classList.remove("selected");
@@ -36,6 +41,7 @@ two.onclick = function() {
 var three = document.getElementById('3');
 three.onclick = function() {
     selected = '3'
+    document.getElementById("selected").innerHTML = selected;
     console.log(selected);
     three.classList.add("selected");
     one.classList.remove("selected");
@@ -48,6 +54,7 @@ three.onclick = function() {
 var four = document.getElementById('4');
 four.onclick = function() {
     selected = '4'
+    document.getElementById("selected").innerHTML = selected;
     console.log(selected);
     four.classList.add("selected");
     one.classList.remove("selected");
@@ -60,6 +67,7 @@ four.onclick = function() {
 var five = document.getElementById('5');
 five.onclick = function() {
     selected = '5'
+    document.getElementById("selected").innerHTML = selected;
     console.log(selected);
     five.classList.add("selected");
     one.classList.remove("selected");
@@ -73,19 +81,23 @@ five.onclick = function() {
 
     var submit = document.getElementById('submit');
     submit.onclick = function() {
-        if (selected != 'not'){
+        if (selected != 'not'||'1'){
+            
+
+           
             //don't let submmit work
             console.log('item selected proceed');
-            three.classList.remove("selected");
             thankyou.classList.remove("hidden");
+            star.classList.add("hidden");
+            text.classList.add("hidden");
+            rating.classList.add("hidden");
+            submit.classList.add("hidden");
+
         }else{
             console.log('No item selected');
         }
 
     }
-
-
-
 
 
 
